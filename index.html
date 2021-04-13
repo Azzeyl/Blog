@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header> <!--MENU DE NAVEGACION--> <!--inverse color negro / static top que siempre veamos la barra-->
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="container"> <!--PARA QUE NO OCUPE TODA LA PAGINA-->
+                <div class="navbar-header">                                                                  <!--LINK-->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion"> <!--BOTON PAR DISPOCITIVOS MOVILE BOTON DESPEGABLE-->
+                        <span class="sr-only">Desplegar y ocultar menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> <!--DISEÑO DEL BOTON PARA MOVIL TRES LINEAS-->
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--links de la barra-->
+                    <a href="#" class="navbar-brand">JonatanCamilo</a>
+                </div>
+                <!--INICIO DEL MENU-->
+                                                           <!--DEBE SER EL MISMO QUE EL DE ARRIVA-->
+                <div class="collapse navbar-collapse" id="navegacion">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Inicio</a></li> <!--EL ACTIVE ASE QUE EL BOTON QUEDE SUBRAYADO EN LA PAGINA EN DONDE ESTA-->
+                        <li class="dropdown"> <!--ESTO ES PARA EL BOTON DESPLEGABLE CON LA CLASE DROPDOWN-->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                Categorias <span class="caret"></span> <!--PARA EL ICONO DEL BOTON DE LA FELCHA ABAJO-->
+                            </a>
+                            <ul class="dropdown-menu" role="menu"> <!--AQUI VA EL CONTENIDO DEL BOTON CATEGORIAS-->
+                                <li><a href="#">Categoria #1</a></li>
+                                <li class="divider"></li> <!--PARA PONER UNA LINEA DE SEPARACION ENTRE LAS CATEGORIAS-->
+                                <li><a href="#">Categoria #2</a></li>
+                                <li><a href="#">Categoria #3</a></li>
+                                <li><a href="#">Categoria #4</a></li>
+                            </ul>
+                        </li>
+                         <li><a href="#">Blog</a></li>
+                         <li><a href="#">Contacto</a></li>
+                    </ul>
+
+            <!--en action va php-->                                <!--navbar right es para que se ubique a la derecha-->
+                    <form action="" class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="from-control" placeholder="Buscar"> <!--LA BARRA DE BUSQUEDA-->
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-search"></span> <!--BOTON DE LUPA SE BUSCA EN BOOSTRAP Glyphicons-->
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header> <!--AQUI TERMINA TODO EL HEADER LO INICIAL_ TAMBIEN ACABA LA BARRA DE INICIO _ TAMBIEN LA BARRA DE INICIO CON DISPOSITIVO MOVIL-->
+     
+
+    <!--EL JUMBOTRON EL CUADRO INICIAL CON EL NOMBRE DE LA WEB-->
+                    <!--esta clase para modificarlo con css-->
+    <section class="jumbotron">
+        <div class="container"> <!--PARA que que de centrado el texto-->
+            <h1 class="titulo_blog">JonatanCamilo Blog</h1>
+            <p>Bolg de diseño web</p>
+        </div>
+    </section>
+     
+    <!--MIGAS DE PAN-->
+    <!--mAIN DE LOS ARTICULOS MODIFICADO EN CSS-->
+    <section class="main container"> <!--ESTO ES PARA EL CONTENIDO DE WEB QUE SERA CENTRADO-->
+        <div class="row"><!--FILA--> <!--MIGAS DE PAN-->
+            <section class="posts col-md-9"> <!--TAMAÑO DE LA BARRA 9-->
+                <div class="miga_de_pan">
+                    <ol class="breadcrumb"> <!--Se usan para ubica ren que parte del sitio web se encuentra-->
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Categorias</a></li>
+                        <li class="active">Diseño web</li> <!--Se  utiliza para especifica en que parate se encuetnra con un color mas descriptivo-->
+                    </ol>
+                </div>
+
+                 <!--ARTICULOS-->
+                 <!--ARTICULO 1-->
+                                <!--clase post de cada articulo en css-->
+                <article class="post clearfix"> <!--SIEMPRE SE PONE-->
+                    <!--para la imagen-->  <!--con pull left es para que la imagen este en la izquierda-->
+                    <a href="#" class="thumb pull-left">
+                        <!--CON LA CLASEE img-thumbnail se le agragan bodes a la imagen-->
+                        <img class="img-thumbnail"src="img/arbol1.jpg" alt="es un arbol verde">
+                    </a>
+                    <h2 class="post-tittle">    <!--TITULO DEL ARTICULO CON LINK PARA EL CONTENIDO-->
+                        <a href="#">Los arboles son indispensables para la vida en la tierra</a>
+                    </h2>
+                    <!--LINK DE LA FECHA CON LAS CLASES Y EL AUTOR CON LINK-->
+                    <P><span class="post-fecha">28 de Febredo de 2021</span> por <span class="pos-autor"> <a href="#">Jonatan Camilo Igua</a></span></P>
+                        
+                    <!--contenido de escritura--> <!--just justify para justificar el texto-->
+                    <p class="post-contenido text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quia minus labore repellendus qui itaque necessitatibus et earum omnis voluptate non minima, saepe libero ipsam illum. Ab assumenda pariatur repellat
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quia minus labore repellendus qui itaque necessitatibus et earum omnis voluptate non minima, saepe libero ipsam illum. Ab assumenda pariatur repellat.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quia minus labore repellendus qui itaque necessitatibus et earum omnis voluptate non minima, saepe libero ipsam illum. Ab assumenda pariatur repellat.
+                    </p>
+                   
+                   <!--BOTONES DE ABAJO-->
+
+                   <div class="contenedor-botones">
+                       <a href="#" class="btn btn-primary">Leer mas</a> <!--PRIMER BOTON DE LEER MAS-->
+                       <!--sEGUNDO BOTON-->          <!--sPAN CON CLASE badge Y LUEGO EL NUMERO DE LOS COMETARIOS PARA MOSTRALO-->
+                       <a href="#" class="btn btn-success">Comentarios <span class="badge">20</span></a>
+                   </div>
+                   </article>
+                    
+                   <!--ARTICULO 2-->
+                   <article class="post clearfix"> <!--SIEMPRE SE PONE-->
+                    <!--para la imagen-->  <!--con pull left es para que la imagen este en la izquierda-->
+                    <a href="#" class="thumb pull-left">
+                        <!--CON LA CLASEE img-thumbnail se le agragan bodes a la imagen-->
+                        <img class="img-thumbnail"src="img/flor.jpg" alt="es un arbol verde">
+                    </a>
+                    <h2 class="post-tittle">    <!--TITULO DEL ARTICULO CON LINK PARA EL CONTENIDO-->
+                        <a href="#">Las flores y sus diferentes colores</a>
+                    </h2>
+                    <!--LINK DE LA FECHA CON LAS CLASES Y EL AUTOR CON LINK-->
+                    <P><span class="post-fecha">28 de Febredo de 2021</span> por <span class="pos-autor"> <a href="#">Jonatan Camilo Igua</a></span></P>
+                        
+                    <!--contenido de escritura--> <!--just justify para justificar el texto-->
+                    <p class="post-contenido text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quia minus labore repellendus qui itaque necessitatibus et earum omnis voluptate non minima, saepe libero ipsam illum. Ab assumenda pariatur repellat
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quia minus labore repellendus qui itaque necessitatibus et earum omnis voluptate non minima, saepe libero ipsam illum. Ab assumenda pariatur repellat.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quia minus labore repellendus qui itaque necessitatibus et earum omnis voluptate non minima, saepe libero ipsam illum. Ab assumenda pariatur repellat.
+                    </p>
+                   
+                   <!--BOTONES DE ABAJO-->
+
+                   <div class="contenedor-botones">
+                       <a href="#" class="btn btn-primary">Leer mas</a> <!--PRIMER BOTON DE LEER MAS-->
+                       <!--sEGUNDO BOTON-->          <!--sPAN CON CLASE badge Y LUEGO EL NUMERO DE LOS COMETARIOS PARA MOSTRALO-->
+                       <a href="#" class="btn btn-success">Comentarios <span class="badge">20</span></a>
+                   </div>
+                   </article>
+
+                   <!--ARTICULO 3-->
+
+                   <article class="post clearfix"> <!--SIEMPRE SE PONE-->
+                    <!--para la imagen-->  <!--con pull left es para que la imagen este en la izquierda-->
+                    <a href="#" class="thumb pull-left">
+                        <!--CON LA CLASEE img-thumbnail se le agragan bodes a la imagen-->
+                        <img class="img-thumbnail"src="img/tulipan.jpg" alt="es un arbol verde">
+                    </a>
+                    <h2 class="post-tittle">    <!--TITULO DEL ARTICULO CON LINK PARA EL CONTENIDO-->
+                        <a href="#">Los tulipanes la verdad detras de su gran aroma</a>
+                    </h2>
+                    <!--LINK DE LA FECHA CON LAS CLASES Y EL AUTOR CON LINK-->
+                    <P><span class="post-fecha">28 de Febredo de 2021</span> por <span class="pos-autor"> <a href="#">Jonatan Camilo Igua</a></span></P>
+                        
+                    <!--contenido de escritura--> <!--just justify para justificar el texto-->
+                    <p class="post-contenido text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quia minus labore repellendus qui itaque necessitatibus et earum omnis voluptate non minima, saepe libero ipsam illum. Ab assumenda pariatur repellat
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quia minus labore repellendus qui itaque necessitatibus et earum omnis voluptate non minima, saepe libero ipsam illum. Ab assumenda pariatur repellat.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quia minus labore repellendus qui itaque necessitatibus et earum omnis voluptate non minima, saepe libero ipsam illum. Ab assumenda pariatur repellat.
+                    </p>
+                   
+                   <!--BOTONES DE ABAJO-->
+
+                   <div class="contenedor-botones">
+                       <a href="#" class="btn btn-primary">Leer mas</a> <!--PRIMER BOTON DE LEER MAS-->
+                       <!--sEGUNDO BOTON-->          <!--sPAN CON CLASE badge Y LUEGO EL NUMERO DE LOS COMETARIOS PARA MOSTRALO-->
+                       <a href="#" class="btn btn-success">Comentarios <span class="badge">20</span></a>
+                   </div>
+                   </article>
+
+                   <!--PAGINACION O BOTONES DE CAMBIAR DE PAGINA-->
+
+                   <nav>
+                       <div class="center-block"> <!--PARA CENTRAR-->
+                        <ul class="pagination">
+                            <li class="disabled"><a href="#">&laquo;<span class="sr-only">Anterior</span></a></li> <!--Esto espara dispoitivos de lestura y este boton es una felcha-->
+                            <li class="active"><a href="#">1</a></li> <!--ACTIVE ES PARA IDENTIFICAR EN QUE PAGINA ESTA-->
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo; <span class="sr-only">Siguiente</span></a></li> <!--BOTON PARA SIGIETNE FLECHA-->
+                        </ul>
+                       </div>
+                   </nav>
+            </section>
+
+            <!--AQUI ACABA TODOS EL CONTENIDO DE LOS ARTICULOS-->
+
+             <!--AQUI INICIA EL ASIDE LA COLUMNA LATERAL-->
+       
+    <!--tomar 3 columnas medianas-->
+     <aside class="col-md-3 hidden-xs hidden-sm">  <!--DIPOSITIVOS PEQUÑOS Y EXRAPEQUÑOS NO APERECE EL ASIDE-->
+        <h4>Categorias</h4>
+
+        <div class="list-group">
+            <a href="#" class="list-group-item active">Plantas</a>
+                    <a href="#"class="list-group-item">Flores</a>
+                    <a href="#"class="list-group-item">Frutas</a>
+                    <a href="#"class="list-group-item">Clima</a>
+                    <a href="#"class="list-group-item">Temporadas</a>
+                    <a href="#"class="list-group-item">Herramientas</a>
+                    <a href="#"class="list-group-item">Turismo</a>
+        </div>
+          <!--Articulos rescientes truco-->
+        <h4>Articulos recientes</h4>
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">Los arboles son indispensables para la vida en la tierra</h4> <!--TITULO DEL ARTICULO-->
+            <p class="list-group-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quia minus labore repellendus qui itaque necessitatibus </p> <!--DESCRIPCCION BREVE DEL ARTICULO-->
+        </a>
+
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">Las flores y sus diferentes colores</h4> <!--TITULO DEL ARTICULO-->
+            <p class="list-group-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quia minus labore repellendus qui itaque necessitatibus </p> <!--DESCRIPCCION BREVE DEL ARTICULO-->
+        </a>
+
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">Los tulipanes la verdad detras de su gran aroma</h4> <!--TITULO DEL ARTICULO-->
+            <p class="list-group-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quia minus labore repellendus qui itaque necessitatibus </p> <!--DESCRIPCCION BREVE DEL ARTICULO-->
+        </a>
+        </aside>
+        </div> 
+    </section>
+   
+
+     <!--AQUI INICIA FOOTER-->
+
+     <footer>
+         <div class="container"> <!--PARA CENTRAR EL TEXTO-->
+            <div class="row"> <!--row es una fila-->
+                <div class="col-xs-6"> <!--COLUMNA EXTRA PEQUEÑA-->
+                    <P>Jontan Camilo Igua - Autor</P>
+                </div>
+                <!--LISTA EN LINEA-->
+                <div class="col-xs-6">    <!--texto derecha-->
+                    <ul class="list-inline text-right">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                 </div>
+
+         </div>
+     </footer>
+    
+
+
+
+
+    
+  
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+        

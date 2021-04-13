@@ -1,0 +1,110 @@
+/*Header*/ 
+.navbar{
+    margin-bottom: 0; /*SE ARREGLA EL ESPACIO DEL MENU DE INICIO CON EL jumbotron*/
+}
+
+.jumbotron{
+    background: #0859A9;
+    color: white;
+    padding: 20px 0; /*la primera instruccion es para el espaciado de arriva y abajo y el otro de los lados*/
+}
+
+.jumbotron .titulo_blog{
+    font-size: 70px; /*CAMBIAR TAMAÑO DE LA LETRA*/
+}
+
+.navbar-inverse {
+    background-color: #11263A;   /*CAMBIA COLOR DEL MENU DE INICO LOSUPE CON EL INSPECIOANR COPIE EL CODIGO EN CSS Y LO MODIFIQUE*/
+    border-color: black;
+}
+
+.navbar-inverse .navbar-brand {  /*color del titulo falcon master*/
+    color: #FFFFFF;
+}
+
+.navbar-brand {            /*titulo falcon master*/
+    float: left;
+    height: 50px;
+    padding: 18px 15px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+ /*boton de inicio color y caja*/
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #DDDDDD;
+    background-color: #080808;
+}
+
+/*altura de los botones*/
+.navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+ /*SEPARACION UNA DEL OTRO LOS BOTONES DEL INICIO*/
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 15px 18.5px;
+}
+
+/*ESTILOS DE LOS PARRAFOS Y LA IMAGEN*/
+
+.main{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ 
+/*PARA LA LINEA DE SEPARACION DE CADA ARTICULO IMPORTANTE*/
+.post{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #4D1414; /*BORDE*/
+}
+/*TITULO DEL ARTICULO*/
+.post .post-tittle a{
+    color: #991616;
+}
+
+/*MINIATURA O IMAGEN*/
+
+.post .thumb{
+    margin-right: 10px; /*MARGEN A LA DERECHA */
+    width: 40%; /*CONTENEDRO MIDE EL 40% OSEA EL CONTENIDO YA TIENE UN ESPACIO ESPECIFICADO*/
+
+}
+/**SE ORDENA EL TAMAÑO DE LA IMGEN SEGUN EL CONTENEDOR QUE ANTERIOR MENTE ISIMOS*/
+.post .thumb img{
+    width: 100%;
+}
+/*detalles de los botones*/
+.post .contenedor-botones{
+    width: 100%;
+}
+
+/*BORDES DE LA IMAGEN*/
+.img-thumbnail{
+    background: black; /*Cmbiar el color del borde de la imagen*/
+}
+
+/*COLOR DEL BOTON ACTIVADO*/
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color:green; /*COLOR DEL BLOQUE*/
+    border-color: black; /*COLOR DEL BORDE*/
+}
+
+
+/*MEDIA QUERIE*/ /*RESPONCIVE*/
+@media screen and (max-width: 768px){
+    .post .thumb {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
+
+
